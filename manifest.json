@@ -1,6 +1,6 @@
 {
   "name": "Twitter Autoload",
-  "action": {},
+  "action": { "default_title": "Click to turn ON/OFF"},
   "manifest_version": 3,
   "version": "1.0",
   "description": "Shows latest tweets when the scroll is all the way up.",
@@ -12,8 +12,12 @@
   "author": "Eduardo Chapa eduardo.chapa@gmail.com",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "storage"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
       "matches": ["*://*.twitter.com/*"],

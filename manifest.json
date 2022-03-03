@@ -12,7 +12,6 @@
   "author": "Eduardo Chapa eduardo.chapa@gmail.com",
   "permissions": [
     "activeTab",
-    "scripting",
     "storage"
   ],
   "background": {

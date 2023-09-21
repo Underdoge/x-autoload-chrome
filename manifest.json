@@ -1,0 +1,19 @@
+{
+  "name": "X Autoload",
+  "action": { "default_title": "X Autoload"},
+  "manifest_version": 3,
+  "version": "2.0",
+  "description": "Shows latest posts when the scroll is all the way up.",
+  "icons" : { "16": "/icons/icon16.png",
+              "48": "/icons/icon48.png",
+              "96": "/icons/icon96.png",
+              "128": "/icons/icon128.png"
+  },
+  "author": "Eduardo Chapa eduardo.chapa@gmail.com",
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*","*://*.x.com/*"],
+      "js": ["x_autoload.js"]
+    }
+  ]
+}

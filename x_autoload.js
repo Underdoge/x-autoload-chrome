@@ -24,7 +24,7 @@ document.addEventListener('scroll', function(e) {
     if (window.scrollY === 0 && document.getElementsByTagName("span").length > 0){
         const spans = document.getElementsByTagName("span");
         for (const item of spans){
-            if (item.innerText.match("^Show [0-9]{1,2} posts"))
+            if (item.innerText.match("^Show [0-9]{1,3} posts"))
                 item.click();
             else if (item.innerText.match("^Show 1 post"))
                 item.click();
